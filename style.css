@@ -1,0 +1,14 @@
+.container {
+  display: grid;
+  grid-template-columns: repeat(10, 1fr);
+  grid-gap: 1px;
+  height: 800px;
+  width: 800px;
+  border: solid black;
+}
+
+.square {
+  background-color: red;
+  border: solid black;
+  border-width: 1px;
+}
