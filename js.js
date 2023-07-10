@@ -12,9 +12,20 @@ function gridGen() {
 
   for (let i = 0; i < count; i++) {
     const div = document.createElement('div');
-    div.classList = 'square';
+    div.classList.add(`square-${i}`, `square`);
     container.appendChild(div);
+
+    // Add onmousemove event handler to each div
+    div.onmousemove = function(event) {
+      event.stopPropagation;
+      div.classList.add(`blue`);
+      
+      
+    };
   }
 }
+
+
+
 
 gridGen();
